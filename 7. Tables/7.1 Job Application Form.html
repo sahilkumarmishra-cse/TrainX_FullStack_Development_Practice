@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Application Form</title>
+</head>
+
+<body style="margin:0;
+             padding:20px;
+             background:#e5e5e5;
+             font-family:Arial, Helvetica, sans-serif;">
+
+    <!-- Main Container -->
+    <div style="width:700px;
+                margin:auto;
+                background:white;
+                padding:30px 35px;
+                box-shadow:0px 0px 10px rgba(0,0,0,0.2);">
+
+        <!-- Heading -->
+        <h1 style="text-align:center;
+                   margin-top:0;
+                   margin-bottom:30px;
+                   color:#2f2f55;
+                   letter-spacing:1px;
+                   font-size:38px;">
+
+            JOB APPLICATION FORM
+        </h1>
+
+        <!-- PERSONAL INFORMATION -->
+        <div style="background:#2f2f2f;
+                    color:white;
+                    text-align:center;
+                    padding:8px;
+                    font-weight:bold;
+                    margin-bottom:20px;">
+
+            PERSONAL INFORMATION
+        </div>
+
+        <table style="width:100%;
+                      border-spacing:12px 14px;">
+
+            <tr>
+                <td style="width:20%;">Name:</td>
+
+                <td style="width:30%;">
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+
+                <td style="width:20%;">Date of Birth:</td>
+
+                <td style="width:30%;">
+                    <input type="date"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address:</td>
+
+                <td colspan="3">
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>City, State:</td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+
+                <td>Email Address:</td>
+
+                <td>
+                    <input type="email"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone Number:</td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+
+                <td>S.S.N:</td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Position applied for:</td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+
+                <td>Date available:</td>
+
+                <td>
+                    <input type="date"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Desired Pay:</td>
+
+                <td colspan="3">
+
+                    <input type="radio" name="pay"> Hour
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <input type="radio" name="pay"> Salary
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Employment desired:</td>
+
+                <td colspan="3">
+
+                    <input type="radio" name="employment"> Full Time
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <input type="radio" name="employment"> Part Time
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <input type="radio" name="employment"> Seasonal
+
+                </td>
+            </tr>
+
+        </table>
+
+        <!-- EMPLOYMENT ELIGIBILITY -->
+        <div style="background:#2f2f2f;
+                    color:white;
+                    text-align:center;
+                    padding:8px;
+                    font-weight:bold;
+                    margin-top:25px;
+                    margin-bottom:20px;">
+
+            EMPLOYMENT ELIGIBILITY
+        </div>
+
+        <table style="width:100%;
+                      border-spacing:12px 16px;">
+
+            <tr>
+                <td style="width:60%;">
+                    Are you legally eligible to work in the U.S?
+                </td>
+
+                <td>
+
+                    <input type="radio" name="legal"> Yes
+
+                    &nbsp;&nbsp;&nbsp;
+
+                    <input type="radio" name="legal"> No
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Have you ever worked for this employer?
+                </td>
+
+                <td>
+
+                    <input type="radio" name="employer"> Yes
+
+                    &nbsp;&nbsp;&nbsp;
+
+                    <input type="radio" name="employer"> No
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    If yes, write the start and end dates.
+                </td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Have you ever been convicted of a felony?
+                </td>
+
+                <td>
+
+                    <input type="radio" name="felony"> Yes
+
+                    &nbsp;&nbsp;&nbsp;
+
+                    <input type="radio" name="felony"> No
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    If yes, please explain.
+                </td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+        </table>
+
+        <!-- EDUCATION -->
+        <div style="background:#2f2f2f;
+                    color:white;
+                    text-align:center;
+                    padding:8px;
+                    font-weight:bold;
+                    margin-top:25px;
+                    margin-bottom:20px;">
+
+            EDUCATION
+        </div>
+
+        <table style="width:100%;
+                      border-spacing:12px 16px;">
+
+            <!-- High School -->
+            <tr>
+                <td style="width:18%;">High School:</td>
+
+                <td style="width:32%;">
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+
+                <td style="width:18%;">City / State:</td>
+
+                <td style="width:32%;">
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>From:</td>
+
+                <td>
+                    <input type="date"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+
+                <td>To:</td>
+
+                <td>
+                    <input type="date"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Graduate:</td>
+
+                <td>
+
+                    <input type="radio" name="graduate1"> Yes
+
+                    &nbsp;&nbsp;&nbsp;
+
+                    <input type="radio" name="graduate1"> No
+
+                </td>
+
+                <td>Diploma:</td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <!-- College -->
+            <tr>
+                <td>College:</td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+
+                <td>City / State:</td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>From:</td>
+
+                <td>
+                    <input type="date"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+
+                <td>To:</td>
+
+                <td>
+                    <input type="date"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Graduate:</td>
+
+                <td>
+
+                    <input type="radio" name="graduate2"> Yes
+
+                    &nbsp;&nbsp;&nbsp;
+
+                    <input type="radio" name="graduate2"> No
+
+                </td>
+
+                <td>Diploma:</td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <!-- Other -->
+            <tr>
+                <td>Other:</td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+
+                <td>City / State:</td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Degree / Certification:</td>
+
+                <td>
+                    <input type="text"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+
+                <td>To:</td>
+
+                <td>
+                    <input type="date"
+                           style="width:100%;
+                                  border:none;
+                                  border-bottom:1px solid gray;
+                                  outline:none;">
+                </td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</body>
+
+</html>

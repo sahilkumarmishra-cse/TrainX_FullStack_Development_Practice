@@ -1,0 +1,256 @@
+=============CSS FUNDAMENTALS===================
+
+0. Ways to Add CSS: Inline, Internal, and External
+
+1 . Selectors in CSS
+Image: image.png
+
+Id Selectors
+Class Selectors
+Name Selectors
+Group Selectors
+Descendant Selectors
+attributes Selectors
+
+
+
+
+2. Properties in CSS
+property_name=value
+
+Common CSS Properties
+
+Text	color, font-size, font-family, text-align, line-height
+Background	background-color, background-image, background-size, background-repeat
+Box Model	width, height, margin, padding, border
+Positioning	position, top, left, right, bottom, z-index
+Flexbox/Grid	display, flex-direction, justify-content, align-items, grid-template-columns
+Effects	box-shadow, opacity, transform, transition
+
+
+3.Colors, Fonts, and Text Styling Basics
+
+a. Colors:
+Colors can also be specified using RGB and HEX values. For example, the color "Tomato" can be represented as rgb(255, 99, 71) or #ff6347.
+
+example 1: colorname ->  Tomato , Blue , red
+example 2: rgb ->  rgb(255, 99, 71)
+example 3: hex ->  #ff6347.
+
+b. Fonts:
+Text
+Font Weight
+Font Family
+Font Style
+Google Font : https://fonts.google.com/
+
+
+c. Text Styling
+color,text-align,font-style,text-decoration,text-transform
+line-height,letter-spacing,spacing,text-shadow
+
+
+4. CSS Units
+
+(1.) px (Pixels) : A fixed unit of measurement.
+1px = one pixel on the screen (roughly a tiny dot).
+
+
+.box {
+  width: 300px;
+  height: 100px;
+}
+
+Width → always 300px
+Height → always 100px
+
+
+---------------------------------------------
+
+(2.) % (Percentage)
+Takes a percentage of its parent element.
+
+example:
+<div class="parent">
+  <div class="child"></div>
+</div>
+
+
+
+.parent{
+   width:400px;
+}
+
+.child{
+   width:50%;
+}
+
+
+-----------------------------
+
+(3). em : Relative to the font-size of its parent.
+
+Example:
+.parent {
+  font-size: 20px;
+}
+
+.child {
+  font-size: 2em;
+}
+
+Calculation: 2 × 20px = 40px
+
+
+----------------------------------------
+
+(4). rem : Relative to the root (html) font-size
+---------------------------------------------------
+
+
+(5). vh (Viewport Height) : Percentage of browser height.
+
+Example:
+.hero {
+  height: 100vh;
+}
+
+
+(6). vw (Viewport Width) :Percentage of browser width.
+
+Example:
+.banner {
+  width: 50vw;
+}
+
+
+================
+BOX SIZING
+The CSS box-sizing property defines how to calculate the width and height of an element: should the calculation include padding and borders, or not.
+
+
+Default Behaviour:
+
+{
+  box-sizing:content-box
+}
+
+width + padding + border = actual width of an element
+
+
+height + padding + border = actual height of an element
+
+
+The `box-sizing` property solves this problem.
+
+{
+  box-sizing: border-box
+}
+
+
+===============================
+Display Properties
+
+#  Block : It starts on a new line, and takes up the whole width
+
+#  Inline : It takes only required with and Any height and width properties will have no effect.
+
+
+#  Inline-Block : The element itself is formatted as an inline element, but you can apply height and width values
+
+
+We can change the display property based on the requirement
+=====================================
+
+Position:
+
+1. Static : By Default all elements are statically positioned, top , left , right are not applied.
+
+2. Relative :  relative to its normal position
+
+3. absolute : positioned based on the nearest non-static positioned parent element
+
+4. fixed :  take the fixed position of the html
+
+5. sticky : stick to the defined position using top,left,bottom
+
+
+
+
+What is Flexbox:
+Flexbox Box model is a one dimensional layout model that provides a method to align and arrange element in a very effective ways ( ROWS and COlUMNS) - One at a time
+
+===== Flexbox Container and Flex items =====
+Flexbox Container: Its is a element that holds flex items, where flex items are DIRECT children of flex Container
+Flex Items :  Items are the Direct children of container
+
+flex container is created using
+[ display:flex ]
+
+Some important Properties"
+
+=======FLEX CONTAINER PROPERTIES=======
+
+flex-direction* : row,column,row-reverse,column-reverse
+flex-wrap*:  to wrap the child element in screen width
+justify-content* : main-axis (end,start,center,space-around,space-between)
+align-items* : cross-axis (end,start,center)
+
+
+
+=FLEX ITEMS PROPERTIES=
+order*
+align-self*
+--------
+flex-grow
+flex-shrink
+flex-basis ( same as width of the box )
+------------
+  /* flex grow,shrink, basic */
+  flex:1 1 100px;
+  flex :1s
+
+
+
+  {
+	// Place your snippets for css here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	//
+	// You can also restrict snippets to specific files using include/exclude patterns:
+	// "Test snippet": {
+	// 	"prefix": "test",
+	// 	"body": "test('$1', () => {\n\t$0\n});",
+	// 	"include": ["**/*.test.ts", "*.spec.ts"],
+	// 	"exclude": ["**/temp/*.ts"],
+	// 	"description": "Insert test block"
+	// }
+   "CSS Boilerplate": {
+    "prefix": "cssreset",
+    "body": [
+      "* {",
+      "    margin: 0;",
+      "    padding: 0;",
+      "    box-sizing: border-box;",
+      "    font-family: gilroy, sans-serif;",
+      "}",
+      "",
+      "html,",
+      "body {",
+      "    height: 100vh;",
+      "    width: 100vw;",
+      "}"
+    ],
+    "description": "Insert CSS reset boilerplate"
+  }
+}
