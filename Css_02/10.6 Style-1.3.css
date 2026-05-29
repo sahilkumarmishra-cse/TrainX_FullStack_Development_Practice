@@ -1,0 +1,187 @@
+/* GLOBAL RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+/* MAIN CONTAINER */
+
+.main-container{
+    width: 78%;
+    margin: 0 auto;
+    padding-top: 18px;
+}
+
+/* TOP NAVBAR */
+
+.top-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left Navigation */
+
+.left-nav{
+    display: flex;
+    gap: 14px;
+}
+
+/* Navigation Buttons */
+
+.nav-btn{
+    width: 190px;
+    height: 52px;
+
+    background-color: #d8d5d5;
+
+    border-radius: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Active Button */
+
+.active-btn{
+    background-color: #ffe600;
+}
+
+.active-btn i{
+    color: #5fd07a;
+}
+
+/* Location Box */
+
+.location-box{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 20px;
+}
+
+.location-box i{
+    font-size: 22px;
+}
+
+/* OFFER SECTION */
+
+.offer-container{
+    margin-top: 22px;
+
+    width: 100%;
+    height: 66px;
+
+    background-color: #d7d2d2;
+
+    border-radius: 14px;
+
+    padding: 10px;
+
+    display: flex;
+    gap: 14px;
+}
+
+/* Offer Left */
+
+.offer-left{
+    flex: 3;
+    background-color: #67e6cf;
+}
+
+/* Offer Right */
+
+.offer-right{
+    flex: 1.1;
+    background-color: #82e669;
+}
+
+/* CATEGORY CONTAINER */
+
+.category-container{
+    margin-top: 18px;
+
+    display: flex;
+}
+
+/* Individual Box */
+
+.category-box{
+    flex: 1;
+
+    height: 104px;
+
+    border: 3px solid #b7ff1f;
+
+    background-color: #ececec;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-top: 10px;
+    padding-left: 8px;
+
+    font-size: 18px;
+}
+
+/* ADVERTISEMENT CONTAINER */
+
+.ad-container{
+    margin-top: 28px;
+
+    background-color: #d7d2d2;
+
+    padding: 12px;
+
+    display: flex;
+    gap: 14px;
+}
+
+/* Common Ad Box */
+
+.ad-box{
+    height: 225px;
+
+    border-radius: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+}
+
+/* Ad Box 1 */
+
+.ad-box-1{
+    flex: 2;
+    background-color: #12dde4;
+}
+
+/* Ad Box 2 */
+
+.ad-box-2{
+    flex: 2;
+    background-color: #ef0445;
+}
+
+/* Ad Box 3 */
+
+.ad-box-3{
+    flex: 1;
+    background-color: #ececcd;
+}
