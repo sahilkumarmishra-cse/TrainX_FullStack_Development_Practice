@@ -1,102 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Flipkart Layout</title>
 
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <!-- CSS File Link -->
-    <link rel="stylesheet" href="10.6 Style-1.3.css">
+    <link rel="stylesheet" href="10.6 Style-1.3.css" />
     <!--Note That Writting Only Style-1.3.css Will Not Work You Need To Specify The Exact Path As 10.6 Style-1.3.css-->
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- Main Container -->
     <div class="main-container">
+      <!-- TOP NAVBAR -->
+      <div class="top-navbar">
+        <!-- Left Navigation -->
+        <div class="left-nav">
+          <div class="nav-btn active-btn">
+            <i class="fa-solid fa-square-check"></i>
+            <span>Flipkart</span>
+          </div>
 
-        <!-- TOP NAVBAR -->
-        <div class="top-navbar">
-
-            <!-- Left Navigation -->
-            <div class="left-nav">
-
-                <div class="nav-btn active-btn">
-                    <i class="fa-solid fa-square-check"></i>
-                    <span>Flipkart</span>
-                </div>
-
-                <div class="nav-btn">
-                    <i class="fa-solid fa-plane"></i>
-                    <span>Travel</span>
-                </div>
-
-            </div>
-
-            <!-- Right Location -->
-            <div class="location-box">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Location : Vadodara</span>
-            </div>
-
+          <div class="nav-btn">
+            <i class="fa-solid fa-plane"></i>
+            <span>Travel</span>
+          </div>
         </div>
 
-        <!-- OFFER SECTION -->
-        <div class="offer-container">
+        <!-- Right Location -->
+        <div class="location-box">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>Location : Vadodara</span>
+        </div>
+      </div>
 
-            <div class="offer-left"></div>
+      <!-- OFFER SECTION -->
+      <div class="offer-container">
+        <div class="offer-left"></div>
 
-            <div class="offer-right"></div>
+        <div class="offer-right"></div>
+      </div>
 
+      <!-- CATEGORY BOXES -->
+      <div class="category-container">
+        <div class="category-box">Box 1</div>
+        <div class="category-box">Box 2</div>
+        <div class="category-box">Box 3</div>
+        <div class="category-box">Box 4</div>
+        <div class="category-box">Box 5</div>
+        <div class="category-box">Box 6</div>
+        <div class="category-box">Box 7</div>
+        <div class="category-box">Box 8</div>
+        <div class="category-box">Box 9</div>
+        <div class="category-box">Box 10</div>
+        <div class="category-box">Box 11</div>
+        <div class="category-box">Box 12</div>
+        <div class="category-box">Box 13</div>
+        <div class="category-box">Box 14</div>
+      </div>
+
+      <!-- ADVERTISEMENT SECTION -->
+
+      <div class="ad-container">
+        <div class="ad-box ad-box-1">Ad Banner 1</div>
+
+        <div class="ad-box ad-box-2">Ad Banner 2</div>
+
+        <div class="ad-box ad-box-3">Ad Banner 3</div>
+      </div>
+
+      <!-- CATEGORY MENU -->
+
+      <div class="menu-container">
+        <div class="menu-item active-menu">For You</div>
+        <div class="menu-item">Fashion</div>
+        <div class="menu-item">Mobiles</div>
+        <div class="menu-item">Beauty</div>
+        <div class="menu-item">Electronics</div>
+        <div class="menu-item">Home</div>
+        <div class="menu-item">Appliances</div>
+        <div class="menu-item">Toys</div>
+        <div class="menu-item">Sports</div>
+      </div>
+
+      <!-- SUGGESTED FOR YOU -->
+
+      <h2 class="section-heading">Suggested For You</h2>
+
+      <div class="product-container">
+        <div class="product-card">
+          <div class="product-image gray"></div>
+          <h3>Laptop Bag</h3>
+          <p>₹399</p>
         </div>
 
-        <!-- CATEGORY BOXES -->
-        <div class="category-container">
-
-            <div class="category-box">Box 1</div>
-            <div class="category-box">Box 2</div>
-            <div class="category-box">Box 3</div>
-            <div class="category-box">Box 4</div>
-            <div class="category-box">Box 5</div>
-            <div class="category-box">Box 6</div>
-            <div class="category-box">Box 7</div>
-            <div class="category-box">Box 8</div>
-            <div class="category-box">Box 9</div>
-            <div class="category-box">Box 10</div>
-            <div class="category-box">Box 11</div>
-            <div class="category-box">Box 12</div>
-            <div class="category-box">Box 13</div>
-            <div class="category-box">Box 14</div>
-
+        <div class="product-card">
+          <div class="product-image orange"></div>
+          <h3>Trekking Bag</h3>
+          <p>₹415</p>
         </div>
 
-        <!-- ADVERTISEMENT SECTION -->
-
-        <div class="ad-container">
-
-            <div class="ad-box ad-box-1">
-                Ad Banner 1
-            </div>
-
-            <div class="ad-box ad-box-2">
-                Ad Banner 2
-            </div>
-
-            <div class="ad-box ad-box-3">
-                Ad Banner 3
-            </div>
-
+        <div class="product-card">
+          <div class="product-image blue"></div>
+          <h3>Office Bag</h3>
+          <p>₹480</p>
         </div>
 
+        <div class="product-card">
+          <div class="product-image black"></div>
+          <h3>Travel Backpack</h3>
+          <p>₹876</p>
+        </div>
+      </div>
+
+      <!-- BRANDS IN SPOTLIGHT -->
+
+      <h2 class="section-heading">Brands In Spotlight</h2>
+
+      <div class="spotlight-container">
+        <div class="spot-card">
+          <div class="spot-image adidas"></div>
+          <h3>Min. 50% Off</h3>
+          <p>Sports Collection</p>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image bata"></div>
+          <h3>Shop Now</h3>
+          <p>Premium Collection</p>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image hrx"></div>
+          <h3>From ₹1399</h3>
+          <p>Travel Collection</p>
+        </div>
+      </div>
+
+      <!-- BEAUTY SECTION -->
+
+      <div class="spotlight-container">
+        <div class="spot-card">
+          <div class="spot-image ponds"></div>
+          <h3>Shop Now</h3>
+          <p>Skin Care</p>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image noise"></div>
+          <h3>Min. 70% Off</h3>
+          <p>Smart Watches</p>
+        </div>
+
+        <div class="spot-card">
+          <div class="spot-image himalaya"></div>
+          <h3>Shop Now</h3>
+          <p>Baby Care</p>
+        </div>
+      </div>
+
+      <!-- TOP SELECTION -->
+
+      <div class="top-selection">
+        <div class="top-header">Top Selection</div>
+
+        <div class="top-products">
+          <div class="top-card">
+            <div class="top-image tea"></div>
+            <p>Tea Powder</p>
+          </div>
+
+          <div class="top-card">
+            <div class="top-image oil"></div>
+            <p>Edible Oil</p>
+          </div>
+
+          <div class="top-card">
+            <div class="top-image facewash"></div>
+            <p>Face Wash</p>
+          </div>
+
+          <div class="top-card">
+            <div class="top-image drink"></div>
+            <p>Energy Drink</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+
+      <footer>
+        <div class="footer-content">
+          <div>
+            <h4>ABOUT</h4>
+            <p>Contact Us</p>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Press</p>
+          </div>
+
+          <div>
+            <h4>GROUP COMPANIES</h4>
+            <p>Myntra</p>
+            <p>Cleartrip</p>
+            <p>Shopsy</p>
+          </div>
+
+          <div>
+            <h4>HELP</h4>
+            <p>Payments</p>
+            <p>Shipping</p>
+            <p>Returns</p>
+            <p>FAQ</p>
+          </div>
+
+          <div>
+            <h4>CONSUMER POLICY</h4>
+            <p>Privacy</p>
+            <p>Security</p>
+            <p>Terms Of Use</p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="footer-bottom">
+          © 2026 Flipkart Clone Project | HTML & CSS Practice
+        </div>
+      </footer>
     </div>
-
-</body>
-
+  </body>
 </html>
