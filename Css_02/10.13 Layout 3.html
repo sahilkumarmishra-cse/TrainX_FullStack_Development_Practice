@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern Grid Cards</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        background: #f7f5ef;
+        padding: 30px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+
+        display: grid;
+
+        grid-template-columns: 1.1fr 1fr 1fr;
+
+        grid-template-areas:
+          "custom schedule schedule"
+          "custom wallet inbox"
+          "gift gift reminder";
+
+        gap: 24px;
+      }
+
+      .card {
+        border-radius: 32px;
+        overflow: hidden;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+        transition: 0.3s;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+      }
+
+      .card img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+      }
+
+      .content {
+        padding: 25px;
+      }
+
+      .content h2 {
+        font-size: 36px;
+        color: #222;
+        margin-bottom: 12px;
+      }
+
+      .content p {
+        font-size: 18px;
+        color: #444;
+        line-height: 1.6;
+      }
+
+      /* Individual Cards */
+
+      .custom {
+        background: #d8c4ff;
+        grid-area: custom;
+      }
+
+      .schedule {
+        background: #ffb8cf;
+        grid-area: schedule;
+      }
+
+      .wallet {
+        background: #d8efad;
+        grid-area: wallet;
+      }
+
+      .inbox {
+        background: #ffe27b;
+        grid-area: inbox;
+      }
+
+      .gift {
+        background: #ffc59d;
+        grid-area: gift;
+      }
+
+      .reminder {
+        background: #d7e7f5;
+        grid-area: reminder;
+      }
+
+      /* Different Image Heights */
+
+      .custom img {
+        height: 420px;
+      }
+
+      .schedule img {
+        height: 190px;
+      }
+
+      .wallet img,
+      .inbox img,
+      .reminder img {
+        height: 370px;
+      }
+
+      .gift img {
+        height: 250px;
+      }
+
+      /* Mobile */
+
+      @media (max-width: 900px) {
+        .container {
+          grid-template-columns: 1fr;
+
+          grid-template-areas:
+            "custom"
+            "schedule"
+            "wallet"
+            "inbox"
+            "gift"
+            "reminder";
+        }
+
+        .custom img {
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Customization -->
+
+      <div class="card custom">
+        <img
+          src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1200"
+          alt=""
+        />
+
+        <div class="content">
+          <h2>Customization</h2>
+
+          <p>
+            Use pre-designed templates or personalize with photos, stickers,
+            fonts and videos.
+          </p>
+        </div>
+      </div>
+
+      <!-- Scheduling -->
+
+      <div class="card schedule">
+        <img
+          src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1200"
+          alt=""
+        />
+
+        <div class="content">
+          <h2>Scheduling</h2>
+
+          <p>
+            Schedule all your cards and gifts now and we'll send them
+            automatically later.
+          </p>
+        </div>
+      </div>
+
+      <!-- Wallet -->
+
+      <div class="card wallet">
+        <img
+          src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=800"
+          alt=""
+        />
+
+        <div class="content">
+          <h2>Wallet</h2>
+
+          <p>
+            Access all your gift balances and save money for future purchases.
+          </p>
+        </div>
+      </div>
+
+      <!-- Inbox -->
+
+      <div class="card inbox">
+        <img
+          src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=800"
+          alt=""
+        />
+
+        <div class="content">
+          <h2>Inbox</h2>
+
+          <p>
+            Track your gifts, group chats and delivered cards from one place.
+          </p>
+        </div>
+      </div>
+
+      <!-- Send Gifts -->
+
+      <div class="card gift">
+        <img
+          src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=1200"
+          alt=""
+        />
+
+        <div class="content">
+          <h2>Send Gifts</h2>
+
+          <p>
+            Send gift cards individually or collaborate with friends and family.
+          </p>
+        </div>
+      </div>
+
+      <!-- Reminder -->
+
+      <div class="card reminder">
+        <img
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800"
+          alt=""
+        />
+
+        <div class="content">
+          <h2>Reminders</h2>
+
+          <p>Never miss a birthday, anniversary or important event again.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
