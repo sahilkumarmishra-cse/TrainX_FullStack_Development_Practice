@@ -6,7 +6,7 @@
     <title>Modern Grid Cards</title>
 
     <style>
-      * {
+      /* * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -74,7 +74,7 @@
 
       /* Individual Cards */
 
-      .custom {
+      /* .custom {
         background: #d8c4ff;
         grid-area: custom;
       }
@@ -106,7 +106,7 @@
 
       /* Different Image Heights */
 
-      .custom img {
+      /* .custom img {
         height: 420px;
       }
 
@@ -126,6 +126,213 @@
 
       /* Mobile */
 
+      /* @media (max-width: 900px) {
+        .container {
+          grid-template-columns: 1fr;
+
+          grid-template-areas:
+            "custom"
+            "schedule"
+            "wallet"
+            "inbox"
+            "gift"
+            "reminder";
+        }
+
+        .custom img {
+          height: 300px;
+        }
+      } */
+
+      /* NOTE: NOW WE ARE GOING TO USE THE INDUSTRY STANDARD PRACTICE OF STYLING - CSS VARIABLES */
+
+      :root {
+        /* Colors */
+
+        --body-bg: #f7f5ef;
+
+        --custom-bg: #d8c4ff;
+        --schedule-bg: #ffb8cf;
+        --wallet-bg: #d8efad;
+        --inbox-bg: #ffe27b;
+        --gift-bg: #ffc59d;
+        --reminder-bg: #d7e7f5;
+
+        /* Text Colors */
+
+        --heading-color: #222;
+        --paragraph-color: #444;
+
+        /* Border Radius */
+
+        --card-radius: 32px;
+
+        /* Shadow */
+
+        --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+        /* Transition */
+
+        --transition: 0.3s;
+
+        /* Grid Gap */
+
+        --grid-gap: 24px;
+
+        /* Font */
+
+        --main-font: "Segoe UI", sans-serif;
+      }
+
+      /* Reset */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: var(--main-font);
+      }
+
+      /* Body */
+
+      body {
+        background: var(--body-bg);
+        padding: 30px;
+      }
+
+      /* Container */
+
+      .container {
+        max-width: 1200px;
+
+        margin: auto;
+
+        display: grid;
+
+        grid-template-columns: 1.1fr 1fr 1fr;
+
+        grid-template-areas:
+          "custom schedule schedule"
+          "custom wallet inbox"
+          "gift gift reminder";
+
+        gap: var(--grid-gap);
+      }
+
+      /* Card */
+
+      .card {
+        border-radius: var(--card-radius);
+
+        overflow: hidden;
+
+        box-shadow: var(--card-shadow);
+
+        transition: var(--transition);
+
+        display: flex;
+
+        flex-direction: column;
+
+        background: white;
+      }
+
+      .card:hover {
+        transform: translateY(-6px);
+      }
+
+      /* Images */
+
+      .card img {
+        width: 100%;
+
+        height: 240px;
+
+        object-fit: cover;
+      }
+
+      /* Content */
+
+      .content {
+        padding: 25px;
+      }
+
+      .content h2 {
+        font-size: 36px;
+
+        color: var(--heading-color);
+
+        margin-bottom: 12px;
+      }
+
+      .content p {
+        font-size: 18px;
+
+        color: var(--paragraph-color);
+
+        line-height: 1.6;
+      }
+
+      /* Individual Cards */
+
+      .custom {
+        background: var(--custom-bg);
+
+        grid-area: custom;
+      }
+
+      .schedule {
+        background: var(--schedule-bg);
+
+        grid-area: schedule;
+      }
+
+      .wallet {
+        background: var(--wallet-bg);
+
+        grid-area: wallet;
+      }
+
+      .inbox {
+        background: var(--inbox-bg);
+
+        grid-area: inbox;
+      }
+
+      .gift {
+        background: var(--gift-bg);
+
+        grid-area: gift;
+      }
+
+      .reminder {
+        background: var(--reminder-bg);
+
+        grid-area: reminder;
+      }
+
+      /* Different Image Heights */
+
+      .custom img {
+        height: 420px;
+      }
+
+      .schedule img {
+        height: 190px;
+      }
+
+      .wallet img,
+      .inbox img,
+      .reminder img {
+        height: 370px;
+      }
+
+      .gift img {
+        height: 250px;
+      }
+
+      /* Mobile Responsive */
+
       @media (max-width: 900px) {
         .container {
           grid-template-columns: 1fr;
@@ -141,6 +348,14 @@
 
         .custom img {
           height: 300px;
+        }
+
+        .content h2 {
+          font-size: 28px;
+        }
+
+        .content p {
+          font-size: 16px;
         }
       }
     </style>
