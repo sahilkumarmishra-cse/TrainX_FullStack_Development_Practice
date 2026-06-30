@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Profile Card</title>
+
+    <style>
+      :root {
+        --bg1: #6d28d9;
+        --bg2: #b84cff;
+
+        --card: #ffffff;
+
+        --follow: #6d28d9;
+
+        --message: #d8d8d8;
+
+        --shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+        --radius: 22px;
+
+        --dark-green: #0b8f35;
+
+        --light-green: #ff52b4;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:
+          Segoe UI,
+          sans-serif;
+      }
+
+      body {
+        background: #f4f4f4;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        height: 100vh;
+      }
+
+      .container {
+        width: 430px;
+
+        height: 620px;
+
+        background: linear-gradient(135deg, var(--bg1), var(--bg2));
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        position: relative;
+
+        border-radius: 10px;
+      }
+
+      .card {
+        width: 285px;
+
+        background: var(--card);
+
+        border-radius: 18px;
+
+        box-shadow: var(--shadow);
+
+        text-align: center;
+
+        padding: 25px;
+
+        position: relative;
+      }
+
+      .profile {
+        width: 180px;
+
+        height: 180px;
+
+        border-radius: 15px;
+
+        object-fit: cover;
+
+        margin-top: -70px;
+
+        border: 5px solid white;
+
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Blinking Online Indicator */
+
+      .online {
+        position: absolute;
+
+        top: 18px;
+
+        right: 18px;
+
+        width: 28px;
+
+        height: 28px;
+
+        border-radius: 50%;
+
+        border: 4px solid white;
+
+        animation: blink 1s infinite alternate;
+
+        box-shadow: 0 0 15px lime;
+      }
+
+      @keyframes blink {
+        0% {
+          background: var(--dark-green);
+
+          box-shadow: 0 0 8px var(--dark-green);
+        }
+
+        100% {
+          background: var(--light-green);
+
+          box-shadow: 0 0 25px var(--light-green);
+        }
+      }
+
+      h2 {
+        margin-top: 20px;
+
+        color: #333;
+      }
+
+      .job {
+        color: #888;
+
+        margin-top: 5px;
+
+        margin-bottom: 25px;
+      }
+
+      .stats {
+        display: flex;
+
+        justify-content: space-between;
+
+        margin-bottom: 25px;
+      }
+
+      .stats div {
+        flex: 1;
+      }
+
+      .stats h3 {
+        color: #333;
+      }
+
+      .stats p {
+        font-size: 14px;
+
+        color: #888;
+      }
+
+      .buttons {
+        display: flex;
+
+        justify-content: space-between;
+      }
+
+      .follow {
+        width: 48%;
+
+        padding: 12px;
+
+        background: var(--follow);
+
+        color: white;
+
+        border: none;
+
+        border-radius: 6px;
+
+        cursor: pointer;
+
+        transition: 0.3s;
+      }
+
+      .follow:hover {
+        background: #4f1db4;
+
+        transform: translateY(-3px);
+      }
+
+      .message {
+        width: 48%;
+
+        padding: 12px;
+
+        background: var(--message);
+
+        border: none;
+
+        border-radius: 6px;
+
+        cursor: pointer;
+
+        transition: 0.3s;
+      }
+
+      .message:hover {
+        background: #bdbdbd;
+
+        transform: translateY(-3px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="online"></div>
+
+        <img
+          class="profile"
+          src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=700"
+          alt="Profile"
+        />
+
+        <h2>Sophia Carter</h2>
+
+        <p class="job">Web Developer</p>
+
+        <div class="stats">
+          <div>
+            <h3>100</h3>
+
+            <p>Posts</p>
+          </div>
+
+          <div>
+            <h3>940k</h3>
+
+            <p>Followers</p>
+          </div>
+
+          <div>
+            <h3>185</h3>
+
+            <p>Following</p>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="follow">Follow</button>
+
+          <button class="message">Message</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
