@@ -206,3 +206,56 @@ console.log(result); // Output: 15
 
 
 */ 
+
+
+
+//Write a function named (BasicStudentDetails) that create a new arrays of objects {Name, Email, Phone} and return the new array of objects. The function should take an array of student objects as input, where each student object contains properties like name, email, and phone. The function should extract these properties and create a new array of objects with only the specified properties.
+
+
+function BasicStudentDetails(students) {
+    if (!Array.isArray(students)) return [];
+    return students.map(s => ({
+        Name: s.name ?? s.Name ?? '',
+        Email: s.email ?? s.Email ?? '',
+        Phone: s.phone ?? s.Phone ?? ''
+    }));
+}
+
+// Example usage for BasicStudentDetails:
+const basicDetails = BasicStudentDetails(students);
+console.log('Basic student details:', basicDetails);
+
+
+
+
+//Write a program to get the Total Marks using reduce() method and get the percentage.
+// Implementation: compute total marks and percentage for each student.
+
+// Each student object should have a `name` and a `marks` array.
+function Percentage(students, maxPerSubject = 100) 
+{
+    if (!Array.isArray(students)) return [];
+
+    return students.map(student => {
+        const total = (student.marks || []).reduce((acc, m) => acc + (Number(m) || 0), 0);
+        const maxTotal = (student.marks || []).length * maxPerSubject || 1;
+        const percentage = (total / maxTotal) * 100;
+        return Object.assign({}, student, { total, percentage });
+    });
+}
+
+// Example usage:
+const students = [
+    { name: 'Aman', marks: [80, 90, 75] },
+    { name: 'Aranav', marks: [60, 70, 65] },
+    { name: 'Aaradhaya', marks: [95, 85, 100] }
+];
+
+const results = Percentage(students, 100);
+
+results.forEach(r => {
+
+    console.log(`${r.name} — Total: ${r.total}, Percentage: ${r.percentage.toFixed(2)}%`);
+
+});
+
